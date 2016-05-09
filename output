@@ -1,0 +1,29 @@
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:compileJmhJava
+:processJmhResources UP-TO-DATE
+:jmhClasses
+:jmhRunBytecodeGenerator
+Processing 12 classes from /scratch/l_hart08/workspace/jmh/build/classes/jmh with "reflection" generator
+Writing out Java source to /scratch/l_hart08/workspace/jmh/build/jmh-generated-sources and resources to /scratch/l_hart08/workspace/jmh/build/jmh-generated-classes
+:jmhCompileGeneratedClasses
+:jmhJar
+:jmh
+# JMH 1.11.3 (released 113 days ago, please consider updating!)
+# VM version: JDK 1.8.0_77, VM 25.77-b03
+# VM invoker: /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wallerlab.yoink.SetOfBenchmarks.functionalMlAxl
+
+# Run progress: 0.00% complete, ETA 02:00:00
+# Fork: 1 of 10
+# Warmup Iteration   1: setting up molecules

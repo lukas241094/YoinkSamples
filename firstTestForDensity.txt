@@ -1,0 +1,1403 @@
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:compileJmhJava
+:processJmhResources UP-TO-DATE
+:jmhClasses
+:jmhRunBytecodeGenerator
+Processing 17 classes from /scratch/l_hart08/workspace/jmh/build/classes/jmh with "reflection" generator
+Writing out Java source to /scratch/l_hart08/workspace/jmh/build/jmh-generated-sources and resources to /scratch/l_hart08/workspace/jmh/build/jmh-generated-classes
+:jmhCompileGeneratedClasses
+:jmhJar
+:jmh
+# JMH 1.11.3 (released 113 days ago, please consider updating!)
+# VM version: JDK 1.8.0_77, VM 25.77-b03
+# VM invoker: /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wallerlab.yoink.SetOfBenchmarks.densityCalcFunctional
+
+# Run progress: 0.00% complete, ETA 00:20:00
+# Fork: 1 of 10
+# Warmup Iteration   1: setting up molecules
+0.638 ops/s
+# Warmup Iteration   2: 0.689 ops/s
+# Warmup Iteration   3: 0.695 ops/s
+# Warmup Iteration   4: 0.698 ops/s
+# Warmup Iteration   5: 0.692 ops/s
+# Warmup Iteration   6: 0.692 ops/s
+# Warmup Iteration   7: 0.699 ops/s
+# Warmup Iteration   8: 0.664 ops/s
+# Warmup Iteration   9: 0.699 ops/s
+# Warmup Iteration  10: 0.697 ops/s
+# Warmup Iteration  11: 0.699 ops/s
+# Warmup Iteration  12: 0.700 ops/s
+# Warmup Iteration  13: 0.701 ops/s
+# Warmup Iteration  14: 0.702 ops/s
+# Warmup Iteration  15: 0.698 ops/s
+# Warmup Iteration  16: 0.700 ops/s
+# Warmup Iteration  17: 0.703 ops/s
+# Warmup Iteration  18: 0.702 ops/s
+# Warmup Iteration  19: 0.701 ops/s
+# Warmup Iteration  20: 0.701 ops/s
+Iteration   1: 0.702 ops/s
+Iteration   2: 0.695 ops/s
+Iteration   3: 0.702 ops/s
+Iteration   4: 0.702 ops/s
+Iteration   5: 0.701 ops/s
+Iteration   6: 0.702 ops/s
+Iteration   7: 0.703 ops/s
+Iteration   8: 0.702 ops/s
+Iteration   9: 0.701 ops/s
+Iteration  10: 0.697 ops/s
+Iteration  11: 0.701 ops/s
+Iteration  12: 0.700 ops/s
+Iteration  13: 0.701 ops/s
+Iteration  14: 0.701 ops/s
+Iteration  15: 0.703 ops/s
+Iteration  16: 0.700 ops/s
+Iteration  17: 0.702 ops/s
+Iteration  18: 0.700 ops/s
+Iteration  19: 0.701 ops/s
+Iteration  20: 0.702 ops/s
+
+# Run progress: 3.33% complete, ETA 00:33:43
+# Fork: 2 of 10
+# Warmup Iteration   1: setting up molecules
+0.638 ops/s
+# Warmup Iteration   2: 0.700 ops/s
+# Warmup Iteration   3: 0.701 ops/s
+# Warmup Iteration   4: 0.692 ops/s
+# Warmup Iteration   5: 0.699 ops/s
+# Warmup Iteration   6: 0.701 ops/s
+# Warmup Iteration   7: 0.699 ops/s
+# Warmup Iteration   8: 0.674 ops/s
+# Warmup Iteration   9: 0.690 ops/s
+# Warmup Iteration  10: 0.686 ops/s
+# Warmup Iteration  11: 0.697 ops/s
+# Warmup Iteration  12: 0.700 ops/s
+# Warmup Iteration  13: 0.700 ops/s
+# Warmup Iteration  14: 0.699 ops/s
+# Warmup Iteration  15: 0.677 ops/s
+# Warmup Iteration  16: 0.692 ops/s
+# Warmup Iteration  17: 0.699 ops/s
+# Warmup Iteration  18: 0.688 ops/s
+# Warmup Iteration  19: 0.700 ops/s
+# Warmup Iteration  20: 0.701 ops/s
+Iteration   1: 0.701 ops/s
+Iteration   2: 0.699 ops/s
+Iteration   3: 0.683 ops/s
+Iteration   4: 0.702 ops/s
+Iteration   5: 0.701 ops/s
+Iteration   6: 0.704 ops/s
+Iteration   7: 0.703 ops/s
+Iteration   8: 0.701 ops/s
+Iteration   9: 0.702 ops/s
+Iteration  10: 0.702 ops/s
+Iteration  11: 0.686 ops/s
+Iteration  12: 0.701 ops/s
+Iteration  13: 0.701 ops/s
+Iteration  14: 0.698 ops/s
+Iteration  15: 0.702 ops/s
+Iteration  16: 0.702 ops/s
+Iteration  17: 0.696 ops/s
+Iteration  18: 0.696 ops/s
+Iteration  19: 0.688 ops/s
+Iteration  20: 0.701 ops/s
+
+# Run progress: 6.67% complete, ETA 00:32:26
+# Fork: 3 of 10
+# Warmup Iteration   1: setting up molecules
+0.691 ops/s
+# Warmup Iteration   2: 0.696 ops/s
+# Warmup Iteration   3: 0.697 ops/s
+# Warmup Iteration   4: 0.699 ops/s
+# Warmup Iteration   5: 0.658 ops/s
+# Warmup Iteration   6: 0.699 ops/s
+# Warmup Iteration   7: 0.701 ops/s
+# Warmup Iteration   8: 0.701 ops/s
+# Warmup Iteration   9: 0.701 ops/s
+# Warmup Iteration  10: 0.699 ops/s
+# Warmup Iteration  11: 0.698 ops/s
+# Warmup Iteration  12: 0.687 ops/s
+# Warmup Iteration  13: 0.695 ops/s
+# Warmup Iteration  14: 0.697 ops/s
+# Warmup Iteration  15: 0.694 ops/s
+# Warmup Iteration  16: 0.696 ops/s
+# Warmup Iteration  17: 0.696 ops/s
+# Warmup Iteration  18: 0.697 ops/s
+# Warmup Iteration  19: 0.694 ops/s
+# Warmup Iteration  20: 0.697 ops/s
+Iteration   1: 0.698 ops/s
+Iteration   2: 0.698 ops/s
+Iteration   3: 0.699 ops/s
+Iteration   4: 0.693 ops/s
+Iteration   5: 0.694 ops/s
+Iteration   6: 0.696 ops/s
+Iteration   7: 0.699 ops/s
+Iteration   8: 0.699 ops/s
+Iteration   9: 0.698 ops/s
+Iteration  10: 0.699 ops/s
+Iteration  11: 0.701 ops/s
+Iteration  12: 0.698 ops/s
+Iteration  13: 0.697 ops/s
+Iteration  14: 0.696 ops/s
+Iteration  15: 0.698 ops/s
+Iteration  16: 0.694 ops/s
+Iteration  17: 0.695 ops/s
+Iteration  18: 0.699 ops/s
+Iteration  19: 0.699 ops/s
+Iteration  20: 0.694 ops/s
+
+# Run progress: 10.00% complete, ETA 00:31:21
+# Fork: 4 of 10
+# Warmup Iteration   1: setting up molecules
+0.244 ops/s
+# Warmup Iteration   2: 0.681 ops/s
+# Warmup Iteration   3: 0.681 ops/s
+# Warmup Iteration   4: 0.635 ops/s
+# Warmup Iteration   5: 0.662 ops/s
+# Warmup Iteration   6: 0.699 ops/s
+# Warmup Iteration   7: 0.699 ops/s
+# Warmup Iteration   8: 0.698 ops/s
+# Warmup Iteration   9: 0.622 ops/s
+# Warmup Iteration  10: 0.699 ops/s
+# Warmup Iteration  11: 0.700 ops/s
+# Warmup Iteration  12: 0.698 ops/s
+# Warmup Iteration  13: 0.698 ops/s
+# Warmup Iteration  14: 0.690 ops/s
+# Warmup Iteration  15: 0.693 ops/s
+# Warmup Iteration  16: 0.697 ops/s
+# Warmup Iteration  17: 0.698 ops/s
+# Warmup Iteration  18: 0.702 ops/s
+# Warmup Iteration  19: 0.701 ops/s
+# Warmup Iteration  20: 0.701 ops/s
+Iteration   1: 0.702 ops/s
+Iteration   2: 0.704 ops/s
+Iteration   3: 0.700 ops/s
+Iteration   4: 0.700 ops/s
+Iteration   5: 0.699 ops/s
+Iteration   6: 0.692 ops/s
+Iteration   7: 0.698 ops/s
+Iteration   8: 0.699 ops/s
+Iteration   9: 0.699 ops/s
+Iteration  10: 0.697 ops/s
+Iteration  11: 0.699 ops/s
+Iteration  12: 0.698 ops/s
+Iteration  13: 0.696 ops/s
+Iteration  14: 0.700 ops/s
+Iteration  15: 0.698 ops/s
+Iteration  16: 0.696 ops/s
+Iteration  17: 0.701 ops/s
+Iteration  18: 0.699 ops/s
+Iteration  19: 0.699 ops/s
+Iteration  20: 0.697 ops/s
+
+# Run progress: 13.33% complete, ETA 00:30:15
+# Fork: 5 of 10
+# Warmup Iteration   1: setting up molecules
+0.685 ops/s
+# Warmup Iteration   2: 0.698 ops/s
+# Warmup Iteration   3: 0.697 ops/s
+# Warmup Iteration   4: 0.699 ops/s
+# Warmup Iteration   5: 0.698 ops/s
+# Warmup Iteration   6: 0.630 ops/s
+# Warmup Iteration   7: 0.700 ops/s
+# Warmup Iteration   8: 0.700 ops/s
+# Warmup Iteration   9: 0.697 ops/s
+# Warmup Iteration  10: 0.698 ops/s
+# Warmup Iteration  11: 0.692 ops/s
+# Warmup Iteration  12: 0.681 ops/s
+# Warmup Iteration  13: 0.701 ops/s
+# Warmup Iteration  14: 0.701 ops/s
+# Warmup Iteration  15: 0.687 ops/s
+# Warmup Iteration  16: 0.702 ops/s
+# Warmup Iteration  17: 0.699 ops/s
+# Warmup Iteration  18: 0.698 ops/s
+# Warmup Iteration  19: 0.701 ops/s
+# Warmup Iteration  20: 0.700 ops/s
+Iteration   1: 0.702 ops/s
+Iteration   2: 0.702 ops/s
+Iteration   3: 0.695 ops/s
+Iteration   4: 0.699 ops/s
+Iteration   5: 0.698 ops/s
+Iteration   6: 0.693 ops/s
+Iteration   7: 0.695 ops/s
+Iteration   8: 0.690 ops/s
+Iteration   9: 0.700 ops/s
+Iteration  10: 0.700 ops/s
+Iteration  11: 0.698 ops/s
+Iteration  12: 0.695 ops/s
+Iteration  13: 0.696 ops/s
+Iteration  14: 0.699 ops/s
+Iteration  15: 0.702 ops/s
+Iteration  16: 0.699 ops/s
+Iteration  17: 0.697 ops/s
+Iteration  18: 0.691 ops/s
+Iteration  19: 0.701 ops/s
+Iteration  20: 0.701 ops/s
+
+# Run progress: 16.67% complete, ETA 00:29:04
+# Fork: 6 of 10
+# Warmup Iteration   1: setting up molecules
+0.690 ops/s
+# Warmup Iteration   2: 0.691 ops/s
+# Warmup Iteration   3: 0.700 ops/s
+# Warmup Iteration   4: 0.699 ops/s
+# Warmup Iteration   5: 0.631 ops/s
+# Warmup Iteration   6: 0.698 ops/s
+# Warmup Iteration   7: 0.693 ops/s
+# Warmup Iteration   8: 0.698 ops/s
+# Warmup Iteration   9: 0.698 ops/s
+# Warmup Iteration  10: 0.700 ops/s
+# Warmup Iteration  11: 0.695 ops/s
+# Warmup Iteration  12: 0.696 ops/s
+# Warmup Iteration  13: 0.681 ops/s
+# Warmup Iteration  14: 0.703 ops/s
+# Warmup Iteration  15: 0.700 ops/s
+# Warmup Iteration  16: 0.695 ops/s
+# Warmup Iteration  17: 0.699 ops/s
+# Warmup Iteration  18: 0.700 ops/s
+# Warmup Iteration  19: 0.701 ops/s
+# Warmup Iteration  20: 0.704 ops/s
+Iteration   1: 0.701 ops/s
+Iteration   2: 0.703 ops/s
+Iteration   3: 0.703 ops/s
+Iteration   4: 0.701 ops/s
+Iteration   5: 0.703 ops/s
+Iteration   6: 0.703 ops/s
+Iteration   7: 0.704 ops/s
+Iteration   8: 0.703 ops/s
+Iteration   9: 0.699 ops/s
+Iteration  10: 0.699 ops/s
+Iteration  11: 0.702 ops/s
+Iteration  12: 0.702 ops/s
+Iteration  13: 0.702 ops/s
+Iteration  14: 0.702 ops/s
+Iteration  15: 0.703 ops/s
+Iteration  16: 0.699 ops/s
+Iteration  17: 0.699 ops/s
+Iteration  18: 0.694 ops/s
+Iteration  19: 0.696 ops/s
+Iteration  20: 0.701 ops/s
+
+# Run progress: 20.00% complete, ETA 00:27:50
+# Fork: 7 of 10
+# Warmup Iteration   1: setting up molecules
+0.678 ops/s
+# Warmup Iteration   2: 0.699 ops/s
+# Warmup Iteration   3: 0.696 ops/s
+# Warmup Iteration   4: 0.698 ops/s
+# Warmup Iteration   5: 0.694 ops/s
+# Warmup Iteration   6: 0.701 ops/s
+# Warmup Iteration   7: 0.697 ops/s
+# Warmup Iteration   8: 0.687 ops/s
+# Warmup Iteration   9: 0.699 ops/s
+# Warmup Iteration  10: 0.701 ops/s
+# Warmup Iteration  11: 0.702 ops/s
+# Warmup Iteration  12: 0.697 ops/s
+# Warmup Iteration  13: 0.693 ops/s
+# Warmup Iteration  14: 0.695 ops/s
+# Warmup Iteration  15: 0.684 ops/s
+# Warmup Iteration  16: 0.684 ops/s
+# Warmup Iteration  17: 0.687 ops/s
+# Warmup Iteration  18: 0.687 ops/s
+# Warmup Iteration  19: 0.679 ops/s
+# Warmup Iteration  20: 0.691 ops/s
+Iteration   1: 0.683 ops/s
+Iteration   2: 0.679 ops/s
+Iteration   3: 0.695 ops/s
+Iteration   4: 0.693 ops/s
+Iteration   5: 0.681 ops/s
+Iteration   6: 0.689 ops/s
+Iteration   7: 0.699 ops/s
+Iteration   8: 0.689 ops/s
+Iteration   9: 0.684 ops/s
+Iteration  10: 0.701 ops/s
+Iteration  11: 0.698 ops/s
+Iteration  12: 0.699 ops/s
+Iteration  13: 0.700 ops/s
+Iteration  14: 0.699 ops/s
+Iteration  15: 0.700 ops/s
+Iteration  16: 0.698 ops/s
+Iteration  17: 0.681 ops/s
+Iteration  18: 0.700 ops/s
+Iteration  19: 0.699 ops/s
+Iteration  20: 0.688 ops/s
+
+# Run progress: 23.33% complete, ETA 00:26:41
+# Fork: 8 of 10
+# Warmup Iteration   1: setting up molecules
+0.692 ops/s
+# Warmup Iteration   2: 0.697 ops/s
+# Warmup Iteration   3: 0.698 ops/s
+# Warmup Iteration   4: 0.699 ops/s
+# Warmup Iteration   5: 0.698 ops/s
+# Warmup Iteration   6: 0.699 ops/s
+# Warmup Iteration   7: 0.622 ops/s
+# Warmup Iteration   8: 0.699 ops/s
+# Warmup Iteration   9: 0.695 ops/s
+# Warmup Iteration  10: 0.699 ops/s
+# Warmup Iteration  11: 0.700 ops/s
+# Warmup Iteration  12: 0.700 ops/s
+# Warmup Iteration  13: 0.700 ops/s
+# Warmup Iteration  14: 0.700 ops/s
+# Warmup Iteration  15: 0.699 ops/s
+# Warmup Iteration  16: 0.696 ops/s
+# Warmup Iteration  17: 0.701 ops/s
+# Warmup Iteration  18: 0.685 ops/s
+# Warmup Iteration  19: 0.636 ops/s
+# Warmup Iteration  20: 0.677 ops/s
+Iteration   1: 0.671 ops/s
+Iteration   2: 0.699 ops/s
+Iteration   3: 0.700 ops/s
+Iteration   4: 0.700 ops/s
+Iteration   5: 0.667 ops/s
+Iteration   6: 0.700 ops/s
+Iteration   7: 0.689 ops/s
+Iteration   8: 0.685 ops/s
+Iteration   9: 0.699 ops/s
+Iteration  10: 0.687 ops/s
+Iteration  11: 0.665 ops/s
+Iteration  12: 0.701 ops/s
+Iteration  13: 0.701 ops/s
+Iteration  14: 0.698 ops/s
+Iteration  15: 0.700 ops/s
+Iteration  16: 0.698 ops/s
+Iteration  17: 0.698 ops/s
+Iteration  18: 0.677 ops/s
+Iteration  19: 0.700 ops/s
+Iteration  20: 0.701 ops/s
+
+# Run progress: 26.67% complete, ETA 00:25:33
+# Fork: 9 of 10
+# Warmup Iteration   1: setting up molecules
+0.681 ops/s
+# Warmup Iteration   2: 0.694 ops/s
+# Warmup Iteration   3: 0.688 ops/s
+# Warmup Iteration   4: 0.688 ops/s
+# Warmup Iteration   5: 0.604 ops/s
+# Warmup Iteration   6: 0.697 ops/s
+# Warmup Iteration   7: 0.698 ops/s
+# Warmup Iteration   8: 0.702 ops/s
+# Warmup Iteration   9: 0.701 ops/s
+# Warmup Iteration  10: 0.678 ops/s
+# Warmup Iteration  11: 0.670 ops/s
+# Warmup Iteration  12: 0.695 ops/s
+# Warmup Iteration  13: 0.679 ops/s
+# Warmup Iteration  14: 0.696 ops/s
+# Warmup Iteration  15: 0.699 ops/s
+# Warmup Iteration  16: 0.636 ops/s
+# Warmup Iteration  17: 0.698 ops/s
+# Warmup Iteration  18: 0.699 ops/s
+# Warmup Iteration  19: 0.700 ops/s
+# Warmup Iteration  20: 0.700 ops/s
+Iteration   1: 0.696 ops/s
+Iteration   2: 0.699 ops/s
+Iteration   3: 0.700 ops/s
+Iteration   4: 0.701 ops/s
+Iteration   5: 0.702 ops/s
+Iteration   6: 0.699 ops/s
+Iteration   7: 0.700 ops/s
+Iteration   8: 0.701 ops/s
+Iteration   9: 0.694 ops/s
+Iteration  10: 0.699 ops/s
+Iteration  11: 0.701 ops/s
+Iteration  12: 0.701 ops/s
+Iteration  13: 0.699 ops/s
+Iteration  14: 0.699 ops/s
+Iteration  15: 0.695 ops/s
+Iteration  16: 0.694 ops/s
+Iteration  17: 0.702 ops/s
+Iteration  18: 0.696 ops/s
+Iteration  19: 0.690 ops/s
+Iteration  20: 0.701 ops/s
+
+# Run progress: 30.00% complete, ETA 00:24:22
+# Fork: 10 of 10
+# Warmup Iteration   1: setting up molecules
+0.689 ops/s
+# Warmup Iteration   2: 0.638 ops/s
+# Warmup Iteration   3: 0.694 ops/s
+# Warmup Iteration   4: 0.693 ops/s
+# Warmup Iteration   5: 0.697 ops/s
+# Warmup Iteration   6: 0.690 ops/s
+# Warmup Iteration   7: 0.697 ops/s
+# Warmup Iteration   8: 0.691 ops/s
+# Warmup Iteration   9: 0.666 ops/s
+# Warmup Iteration  10: 0.694 ops/s
+# Warmup Iteration  11: 0.700 ops/s
+# Warmup Iteration  12: 0.699 ops/s
+# Warmup Iteration  13: 0.702 ops/s
+# Warmup Iteration  14: 0.701 ops/s
+# Warmup Iteration  15: 0.703 ops/s
+# Warmup Iteration  16: 0.695 ops/s
+# Warmup Iteration  17: 0.700 ops/s
+# Warmup Iteration  18: 0.693 ops/s
+# Warmup Iteration  19: 0.696 ops/s
+# Warmup Iteration  20: 0.696 ops/s
+Iteration   1: 0.698 ops/s
+Iteration   2: 0.697 ops/s
+Iteration   3: 0.698 ops/s
+Iteration   4: 0.699 ops/s
+Iteration   5: 0.701 ops/s
+Iteration   6: 0.702 ops/s
+Iteration   7: 0.703 ops/s
+Iteration   8: 0.698 ops/s
+Iteration   9: 0.685 ops/s
+Iteration  10: 0.684 ops/s
+Iteration  11: 0.676 ops/s
+Iteration  12: 0.692 ops/s
+Iteration  13: 0.697 ops/s
+Iteration  14: 0.702 ops/s
+Iteration  15: 0.677 ops/s
+Iteration  16: 0.698 ops/s
+Iteration  17: 0.698 ops/s
+Iteration  18: 0.663 ops/s
+Iteration  19: 0.695 ops/s
+Iteration  20: 0.698 ops/s
+
+
+Result "densityCalcFunctional":
+  0.697 ±(99.9%) 0.002 ops/s [Average]
+  (min, avg, max) = (0.663, 0.697, 0.704), stdev = 0.007
+  CI (99.9%): [0.695, 0.699] (assumes normal distribution)
+
+
+# JMH 1.11.3 (released 113 days ago, please consider updating!)
+# VM version: JDK 1.8.0_77, VM 25.77-b03
+# VM invoker: /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wallerlab.yoink.SetOfBenchmarks.densityCalcFunctionalParallel
+
+# Run progress: 33.33% complete, ETA 00:23:11
+# Fork: 1 of 10
+# Warmup Iteration   1: setting up molecules
+0.688 ops/s
+# Warmup Iteration   2: 0.691 ops/s
+# Warmup Iteration   3: 0.639 ops/s
+# Warmup Iteration   4: 0.699 ops/s
+# Warmup Iteration   5: 0.698 ops/s
+# Warmup Iteration   6: 0.701 ops/s
+# Warmup Iteration   7: 0.699 ops/s
+# Warmup Iteration   8: 0.699 ops/s
+# Warmup Iteration   9: 0.698 ops/s
+# Warmup Iteration  10: 0.700 ops/s
+# Warmup Iteration  11: 0.676 ops/s
+# Warmup Iteration  12: 0.701 ops/s
+# Warmup Iteration  13: 0.695 ops/s
+# Warmup Iteration  14: 0.697 ops/s
+# Warmup Iteration  15: 0.686 ops/s
+# Warmup Iteration  16: 0.693 ops/s
+# Warmup Iteration  17: 0.679 ops/s
+# Warmup Iteration  18: 0.688 ops/s
+# Warmup Iteration  19: 0.684 ops/s
+# Warmup Iteration  20: 0.685 ops/s
+Iteration   1: 0.695 ops/s
+Iteration   2: 0.700 ops/s
+Iteration   3: 0.701 ops/s
+Iteration   4: 0.703 ops/s
+Iteration   5: 0.703 ops/s
+Iteration   6: 0.702 ops/s
+Iteration   7: 0.697 ops/s
+Iteration   8: 0.689 ops/s
+Iteration   9: 0.687 ops/s
+Iteration  10: 0.697 ops/s
+Iteration  11: 0.683 ops/s
+Iteration  12: 0.678 ops/s
+Iteration  13: 0.702 ops/s
+Iteration  14: 0.697 ops/s
+Iteration  15: 0.698 ops/s
+Iteration  16: 0.701 ops/s
+Iteration  17: 0.703 ops/s
+Iteration  18: 0.702 ops/s
+Iteration  19: 0.703 ops/s
+Iteration  20: 0.701 ops/s
+
+# Run progress: 36.67% complete, ETA 00:22:02
+# Fork: 2 of 10
+# Warmup Iteration   1: setting up molecules
+0.659 ops/s
+# Warmup Iteration   2: 0.699 ops/s
+# Warmup Iteration   3: 0.638 ops/s
+# Warmup Iteration   4: 0.700 ops/s
+# Warmup Iteration   5: 0.692 ops/s
+# Warmup Iteration   6: 0.699 ops/s
+# Warmup Iteration   7: 0.699 ops/s
+# Warmup Iteration   8: 0.687 ops/s
+# Warmup Iteration   9: 0.694 ops/s
+# Warmup Iteration  10: 0.669 ops/s
+# Warmup Iteration  11: 0.696 ops/s
+# Warmup Iteration  12: 0.699 ops/s
+# Warmup Iteration  13: 0.679 ops/s
+# Warmup Iteration  14: 0.700 ops/s
+# Warmup Iteration  15: 0.671 ops/s
+# Warmup Iteration  16: 0.691 ops/s
+# Warmup Iteration  17: 0.700 ops/s
+# Warmup Iteration  18: 0.698 ops/s
+# Warmup Iteration  19: 0.686 ops/s
+# Warmup Iteration  20: 0.700 ops/s
+Iteration   1: 0.695 ops/s
+Iteration   2: 0.697 ops/s
+Iteration   3: 0.676 ops/s
+Iteration   4: 0.701 ops/s
+Iteration   5: 0.698 ops/s
+Iteration   6: 0.696 ops/s
+Iteration   7: 0.701 ops/s
+Iteration   8: 0.698 ops/s
+Iteration   9: 0.693 ops/s
+Iteration  10: 0.700 ops/s
+Iteration  11: 0.700 ops/s
+Iteration  12: 0.700 ops/s
+Iteration  13: 0.701 ops/s
+Iteration  14: 0.696 ops/s
+Iteration  15: 0.690 ops/s
+Iteration  16: 0.697 ops/s
+Iteration  17: 0.697 ops/s
+Iteration  18: 0.700 ops/s
+Iteration  19: 0.697 ops/s
+Iteration  20: 0.696 ops/s
+
+# Run progress: 40.00% complete, ETA 00:20:52
+# Fork: 3 of 10
+# Warmup Iteration   1: setting up molecules
+0.694 ops/s
+# Warmup Iteration   2: 0.685 ops/s
+# Warmup Iteration   3: 0.640 ops/s
+# Warmup Iteration   4: 0.690 ops/s
+# Warmup Iteration   5: 0.696 ops/s
+# Warmup Iteration   6: 0.698 ops/s
+# Warmup Iteration   7: 0.700 ops/s
+# Warmup Iteration   8: 0.699 ops/s
+# Warmup Iteration   9: 0.689 ops/s
+# Warmup Iteration  10: 0.696 ops/s
+# Warmup Iteration  11: 0.668 ops/s
+# Warmup Iteration  12: 0.700 ops/s
+# Warmup Iteration  13: 0.700 ops/s
+# Warmup Iteration  14: 0.695 ops/s
+# Warmup Iteration  15: 0.698 ops/s
+# Warmup Iteration  16: 0.695 ops/s
+# Warmup Iteration  17: 0.699 ops/s
+# Warmup Iteration  18: 0.691 ops/s
+# Warmup Iteration  19: 0.687 ops/s
+# Warmup Iteration  20: 0.697 ops/s
+Iteration   1: 0.698 ops/s
+Iteration   2: 0.699 ops/s
+Iteration   3: 0.700 ops/s
+Iteration   4: 0.699 ops/s
+Iteration   5: 0.699 ops/s
+Iteration   6: 0.694 ops/s
+Iteration   7: 0.700 ops/s
+Iteration   8: 0.699 ops/s
+Iteration   9: 0.700 ops/s
+Iteration  10: 0.681 ops/s
+Iteration  11: 0.689 ops/s
+Iteration  12: 0.691 ops/s
+Iteration  13: 0.696 ops/s
+Iteration  14: 0.680 ops/s
+Iteration  15: 0.693 ops/s
+Iteration  16: 0.702 ops/s
+Iteration  17: 0.694 ops/s
+Iteration  18: 0.702 ops/s
+Iteration  19: 0.700 ops/s
+Iteration  20: 0.700 ops/s
+
+# Run progress: 43.33% complete, ETA 00:19:43
+# Fork: 4 of 10
+# Warmup Iteration   1: setting up molecules
+0.696 ops/s
+# Warmup Iteration   2: 0.700 ops/s
+# Warmup Iteration   3: 0.696 ops/s
+# Warmup Iteration   4: 0.701 ops/s
+# Warmup Iteration   5: 0.702 ops/s
+# Warmup Iteration   6: 0.697 ops/s
+# Warmup Iteration   7: 0.668 ops/s
+# Warmup Iteration   8: 0.682 ops/s
+# Warmup Iteration   9: 0.699 ops/s
+# Warmup Iteration  10: 0.703 ops/s
+# Warmup Iteration  11: 0.700 ops/s
+# Warmup Iteration  12: 0.701 ops/s
+# Warmup Iteration  13: 0.685 ops/s
+# Warmup Iteration  14: 0.702 ops/s
+# Warmup Iteration  15: 0.700 ops/s
+# Warmup Iteration  16: 0.700 ops/s
+# Warmup Iteration  17: 0.702 ops/s
+# Warmup Iteration  18: 0.697 ops/s
+# Warmup Iteration  19: 0.698 ops/s
+# Warmup Iteration  20: 0.684 ops/s
+Iteration   1: 0.698 ops/s
+Iteration   2: 0.699 ops/s
+Iteration   3: 0.700 ops/s
+Iteration   4: 0.702 ops/s
+Iteration   5: 0.696 ops/s
+Iteration   6: 0.700 ops/s
+Iteration   7: 0.699 ops/s
+Iteration   8: 0.681 ops/s
+Iteration   9: 0.687 ops/s
+Iteration  10: 0.691 ops/s
+Iteration  11: 0.697 ops/s
+Iteration  12: 0.687 ops/s
+Iteration  13: 0.685 ops/s
+Iteration  14: 0.688 ops/s
+Iteration  15: 0.665 ops/s
+Iteration  16: 0.695 ops/s
+Iteration  17: 0.697 ops/s
+Iteration  18: 0.686 ops/s
+Iteration  19: 0.691 ops/s
+Iteration  20: 0.694 ops/s
+
+# Run progress: 46.67% complete, ETA 00:18:34
+# Fork: 5 of 10
+# Warmup Iteration   1: setting up molecules
+0.688 ops/s
+# Warmup Iteration   2: 0.642 ops/s
+# Warmup Iteration   3: 0.693 ops/s
+# Warmup Iteration   4: 0.696 ops/s
+# Warmup Iteration   5: 0.699 ops/s
+# Warmup Iteration   6: 0.678 ops/s
+# Warmup Iteration   7: 0.695 ops/s
+# Warmup Iteration   8: 0.699 ops/s
+# Warmup Iteration   9: 0.682 ops/s
+# Warmup Iteration  10: 0.697 ops/s
+# Warmup Iteration  11: 0.692 ops/s
+# Warmup Iteration  12: 0.697 ops/s
+# Warmup Iteration  13: 0.695 ops/s
+# Warmup Iteration  14: 0.689 ops/s
+# Warmup Iteration  15: 0.698 ops/s
+# Warmup Iteration  16: 0.686 ops/s
+# Warmup Iteration  17: 0.698 ops/s
+# Warmup Iteration  18: 0.697 ops/s
+# Warmup Iteration  19: 0.701 ops/s
+# Warmup Iteration  20: 0.696 ops/s
+Iteration   1: 0.696 ops/s
+Iteration   2: 0.700 ops/s
+Iteration   3: 0.696 ops/s
+Iteration   4: 0.685 ops/s
+Iteration   5: 0.700 ops/s
+Iteration   6: 0.698 ops/s
+Iteration   7: 0.699 ops/s
+Iteration   8: 0.699 ops/s
+Iteration   9: 0.701 ops/s
+Iteration  10: 0.700 ops/s
+Iteration  11: 0.699 ops/s
+Iteration  12: 0.686 ops/s
+Iteration  13: 0.699 ops/s
+Iteration  14: 0.698 ops/s
+Iteration  15: 0.680 ops/s
+Iteration  16: 0.681 ops/s
+Iteration  17: 0.683 ops/s
+Iteration  18: 0.697 ops/s
+Iteration  19: 0.700 ops/s
+Iteration  20: 0.686 ops/s
+
+# Run progress: 50.00% complete, ETA 00:17:24
+# Fork: 6 of 10
+# Warmup Iteration   1: setting up molecules
+0.696 ops/s
+# Warmup Iteration   2: 0.700 ops/s
+# Warmup Iteration   3: 0.640 ops/s
+# Warmup Iteration   4: 0.698 ops/s
+# Warmup Iteration   5: 0.702 ops/s
+# Warmup Iteration   6: 0.701 ops/s
+# Warmup Iteration   7: 0.700 ops/s
+# Warmup Iteration   8: 0.699 ops/s
+# Warmup Iteration   9: 0.700 ops/s
+# Warmup Iteration  10: 0.671 ops/s
+# Warmup Iteration  11: 0.703 ops/s
+# Warmup Iteration  12: 0.700 ops/s
+# Warmup Iteration  13: 0.701 ops/s
+# Warmup Iteration  14: 0.701 ops/s
+# Warmup Iteration  15: 0.701 ops/s
+# Warmup Iteration  16: 0.702 ops/s
+# Warmup Iteration  17: 0.699 ops/s
+# Warmup Iteration  18: 0.702 ops/s
+# Warmup Iteration  19: 0.701 ops/s
+# Warmup Iteration  20: 0.699 ops/s
+Iteration   1: 0.701 ops/s
+Iteration   2: 0.703 ops/s
+Iteration   3: 0.703 ops/s
+Iteration   4: 0.702 ops/s
+Iteration   5: 0.693 ops/s
+Iteration   6: 0.693 ops/s
+Iteration   7: 0.701 ops/s
+Iteration   8: 0.702 ops/s
+Iteration   9: 0.702 ops/s
+Iteration  10: 0.703 ops/s
+Iteration  11: 0.698 ops/s
+Iteration  12: 0.703 ops/s
+Iteration  13: 0.697 ops/s
+Iteration  14: 0.702 ops/s
+Iteration  15: 0.702 ops/s
+Iteration  16: 0.701 ops/s
+Iteration  17: 0.702 ops/s
+Iteration  18: 0.697 ops/s
+Iteration  19: 0.703 ops/s
+Iteration  20: 0.703 ops/s
+
+# Run progress: 53.33% complete, ETA 00:16:14
+# Fork: 7 of 10
+# Warmup Iteration   1: setting up molecules
+0.694 ops/s
+# Warmup Iteration   2: 0.701 ops/s
+# Warmup Iteration   3: 0.701 ops/s
+# Warmup Iteration   4: 0.701 ops/s
+# Warmup Iteration   5: 0.635 ops/s
+# Warmup Iteration   6: 0.702 ops/s
+# Warmup Iteration   7: 0.698 ops/s
+# Warmup Iteration   8: 0.698 ops/s
+# Warmup Iteration   9: 0.698 ops/s
+# Warmup Iteration  10: 0.700 ops/s
+# Warmup Iteration  11: 0.700 ops/s
+# Warmup Iteration  12: 0.702 ops/s
+# Warmup Iteration  13: 0.682 ops/s
+# Warmup Iteration  14: 0.700 ops/s
+# Warmup Iteration  15: 0.699 ops/s
+# Warmup Iteration  16: 0.699 ops/s
+# Warmup Iteration  17: 0.700 ops/s
+# Warmup Iteration  18: 0.700 ops/s
+# Warmup Iteration  19: 0.702 ops/s
+# Warmup Iteration  20: 0.700 ops/s
+Iteration   1: 0.697 ops/s
+Iteration   2: 0.701 ops/s
+Iteration   3: 0.698 ops/s
+Iteration   4: 0.700 ops/s
+Iteration   5: 0.701 ops/s
+Iteration   6: 0.700 ops/s
+Iteration   7: 0.699 ops/s
+Iteration   8: 0.701 ops/s
+Iteration   9: 0.698 ops/s
+Iteration  10: 0.701 ops/s
+Iteration  11: 0.701 ops/s
+Iteration  12: 0.702 ops/s
+Iteration  13: 0.702 ops/s
+Iteration  14: 0.702 ops/s
+Iteration  15: 0.699 ops/s
+Iteration  16: 0.701 ops/s
+Iteration  17: 0.700 ops/s
+Iteration  18: 0.698 ops/s
+Iteration  19: 0.701 ops/s
+Iteration  20: 0.701 ops/s
+
+# Run progress: 56.67% complete, ETA 00:15:04
+# Fork: 8 of 10
+# Warmup Iteration   1: setting up molecules
+0.680 ops/s
+# Warmup Iteration   2: 0.695 ops/s
+# Warmup Iteration   3: 0.700 ops/s
+# Warmup Iteration   4: 0.700 ops/s
+# Warmup Iteration   5: 0.632 ops/s
+# Warmup Iteration   6: 0.700 ops/s
+# Warmup Iteration   7: 0.701 ops/s
+# Warmup Iteration   8: 0.701 ops/s
+# Warmup Iteration   9: 0.697 ops/s
+# Warmup Iteration  10: 0.701 ops/s
+# Warmup Iteration  11: 0.701 ops/s
+# Warmup Iteration  12: 0.701 ops/s
+# Warmup Iteration  13: 0.681 ops/s
+# Warmup Iteration  14: 0.698 ops/s
+# Warmup Iteration  15: 0.700 ops/s
+# Warmup Iteration  16: 0.698 ops/s
+# Warmup Iteration  17: 0.700 ops/s
+# Warmup Iteration  18: 0.700 ops/s
+# Warmup Iteration  19: 0.700 ops/s
+# Warmup Iteration  20: 0.701 ops/s
+Iteration   1: 0.696 ops/s
+Iteration   2: 0.696 ops/s
+Iteration   3: 0.698 ops/s
+Iteration   4: 0.696 ops/s
+Iteration   5: 0.699 ops/s
+Iteration   6: 0.701 ops/s
+Iteration   7: 0.700 ops/s
+Iteration   8: 0.700 ops/s
+Iteration   9: 0.696 ops/s
+Iteration  10: 0.701 ops/s
+Iteration  11: 0.702 ops/s
+Iteration  12: 0.701 ops/s
+Iteration  13: 0.703 ops/s
+Iteration  14: 0.703 ops/s
+Iteration  15: 0.683 ops/s
+Iteration  16: 0.699 ops/s
+Iteration  17: 0.692 ops/s
+Iteration  18: 0.690 ops/s
+Iteration  19: 0.699 ops/s
+Iteration  20: 0.680 ops/s
+
+# Run progress: 60.00% complete, ETA 00:13:54
+# Fork: 9 of 10
+# Warmup Iteration   1: setting up molecules
+0.669 ops/s
+# Warmup Iteration   2: 0.645 ops/s
+# Warmup Iteration   3: 0.694 ops/s
+# Warmup Iteration   4: 0.698 ops/s
+# Warmup Iteration   5: 0.695 ops/s
+# Warmup Iteration   6: 0.697 ops/s
+# Warmup Iteration   7: 0.693 ops/s
+# Warmup Iteration   8: 0.690 ops/s
+# Warmup Iteration   9: 0.699 ops/s
+# Warmup Iteration  10: 0.667 ops/s
+# Warmup Iteration  11: 0.701 ops/s
+# Warmup Iteration  12: 0.697 ops/s
+# Warmup Iteration  13: 0.702 ops/s
+# Warmup Iteration  14: 0.702 ops/s
+# Warmup Iteration  15: 0.701 ops/s
+# Warmup Iteration  16: 0.701 ops/s
+# Warmup Iteration  17: 0.692 ops/s
+# Warmup Iteration  18: 0.699 ops/s
+# Warmup Iteration  19: 0.697 ops/s
+# Warmup Iteration  20: 0.698 ops/s
+Iteration   1: 0.699 ops/s
+Iteration   2: 0.699 ops/s
+Iteration   3: 0.699 ops/s
+Iteration   4: 0.698 ops/s
+Iteration   5: 0.694 ops/s
+Iteration   6: 0.696 ops/s
+Iteration   7: 0.696 ops/s
+Iteration   8: 0.696 ops/s
+Iteration   9: 0.699 ops/s
+Iteration  10: 0.700 ops/s
+Iteration  11: 0.696 ops/s
+Iteration  12: 0.699 ops/s
+Iteration  13: 0.694 ops/s
+Iteration  14: 0.700 ops/s
+Iteration  15: 0.702 ops/s
+Iteration  16: 0.699 ops/s
+Iteration  17: 0.703 ops/s
+Iteration  18: 0.700 ops/s
+Iteration  19: 0.701 ops/s
+Iteration  20: 0.701 ops/s
+
+# Run progress: 63.33% complete, ETA 00:12:45
+# Fork: 10 of 10
+# Warmup Iteration   1: setting up molecules
+0.695 ops/s
+# Warmup Iteration   2: 0.702 ops/s
+# Warmup Iteration   3: 0.700 ops/s
+# Warmup Iteration   4: 0.700 ops/s
+# Warmup Iteration   5: 0.699 ops/s
+# Warmup Iteration   6: 0.698 ops/s
+# Warmup Iteration   7: 0.627 ops/s
+# Warmup Iteration   8: 0.699 ops/s
+# Warmup Iteration   9: 0.698 ops/s
+# Warmup Iteration  10: 0.696 ops/s
+# Warmup Iteration  11: 0.700 ops/s
+# Warmup Iteration  12: 0.698 ops/s
+# Warmup Iteration  13: 0.698 ops/s
+# Warmup Iteration  14: 0.699 ops/s
+# Warmup Iteration  15: 0.698 ops/s
+# Warmup Iteration  16: 0.696 ops/s
+# Warmup Iteration  17: 0.699 ops/s
+# Warmup Iteration  18: 0.698 ops/s
+# Warmup Iteration  19: 0.700 ops/s
+# Warmup Iteration  20: 0.692 ops/s
+Iteration   1: 0.690 ops/s
+Iteration   2: 0.687 ops/s
+Iteration   3: 0.690 ops/s
+Iteration   4: 0.691 ops/s
+Iteration   5: 0.684 ops/s
+Iteration   6: 0.685 ops/s
+Iteration   7: 0.680 ops/s
+Iteration   8: 0.682 ops/s
+Iteration   9: 0.691 ops/s
+Iteration  10: 0.693 ops/s
+Iteration  11: 0.687 ops/s
+Iteration  12: 0.670 ops/s
+Iteration  13: 0.677 ops/s
+Iteration  14: 0.667 ops/s
+Iteration  15: 0.680 ops/s
+Iteration  16: 0.688 ops/s
+Iteration  17: 0.685 ops/s
+Iteration  18: 0.696 ops/s
+Iteration  19: 0.694 ops/s
+Iteration  20: 0.693 ops/s
+
+
+Result "densityCalcFunctionalParallel":
+  0.696 ±(99.9%) 0.002 ops/s [Average]
+  (min, avg, max) = (0.665, 0.696, 0.703), stdev = 0.007
+  CI (99.9%): [0.694, 0.697] (assumes normal distribution)
+
+
+# JMH 1.11.3 (released 113 days ago, please consider updating!)
+# VM version: JDK 1.8.0_77, VM 25.77-b03
+# VM invoker: /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.wallerlab.yoink.SetOfBenchmarks.densityCalcImperative
+
+# Run progress: 66.67% complete, ETA 00:11:35
+# Fork: 1 of 10
+# Warmup Iteration   1: setting up molecules
+0.674 ops/s
+# Warmup Iteration   2: 0.690 ops/s
+# Warmup Iteration   3: 0.684 ops/s
+# Warmup Iteration   4: 0.689 ops/s
+# Warmup Iteration   5: 0.693 ops/s
+# Warmup Iteration   6: 0.692 ops/s
+# Warmup Iteration   7: 0.681 ops/s
+# Warmup Iteration   8: 0.698 ops/s
+# Warmup Iteration   9: 0.701 ops/s
+# Warmup Iteration  10: 0.703 ops/s
+# Warmup Iteration  11: 0.711 ops/s
+# Warmup Iteration  12: 0.710 ops/s
+# Warmup Iteration  13: 0.706 ops/s
+# Warmup Iteration  14: 0.694 ops/s
+# Warmup Iteration  15: 0.698 ops/s
+# Warmup Iteration  16: 0.693 ops/s
+# Warmup Iteration  17: 0.698 ops/s
+# Warmup Iteration  18: 0.712 ops/s
+# Warmup Iteration  19: 0.711 ops/s
+# Warmup Iteration  20: 0.708 ops/s
+Iteration   1: 0.713 ops/s
+Iteration   2: 0.705 ops/s
+Iteration   3: 0.710 ops/s
+Iteration   4: 0.699 ops/s
+Iteration   5: 0.709 ops/s
+Iteration   6: 0.711 ops/s
+Iteration   7: 0.703 ops/s
+Iteration   8: 0.713 ops/s
+Iteration   9: 0.707 ops/s
+Iteration  10: 0.710 ops/s
+Iteration  11: 0.712 ops/s
+Iteration  12: 0.714 ops/s
+Iteration  13: 0.707 ops/s
+Iteration  14: 0.703 ops/s
+Iteration  15: 0.689 ops/s
+Iteration  16: 0.713 ops/s
+Iteration  17: 0.690 ops/s
+Iteration  18: 0.710 ops/s
+Iteration  19: 0.699 ops/s
+Iteration  20: 0.697 ops/s
+
+# Run progress: 70.00% complete, ETA 00:10:25
+# Fork: 2 of 10
+# Warmup Iteration   1: setting up molecules
+0.691 ops/s
+# Warmup Iteration   2: 0.706 ops/s
+# Warmup Iteration   3: 0.707 ops/s
+# Warmup Iteration   4: 0.702 ops/s
+# Warmup Iteration   5: 0.703 ops/s
+# Warmup Iteration   6: 0.706 ops/s
+# Warmup Iteration   7: 0.712 ops/s
+# Warmup Iteration   8: 0.713 ops/s
+# Warmup Iteration   9: 0.702 ops/s
+# Warmup Iteration  10: 0.706 ops/s
+# Warmup Iteration  11: 0.702 ops/s
+# Warmup Iteration  12: 0.711 ops/s
+# Warmup Iteration  13: 0.706 ops/s
+# Warmup Iteration  14: 0.707 ops/s
+# Warmup Iteration  15: 0.710 ops/s
+# Warmup Iteration  16: 0.705 ops/s
+# Warmup Iteration  17: 0.702 ops/s
+# Warmup Iteration  18: 0.703 ops/s
+# Warmup Iteration  19: 0.697 ops/s
+# Warmup Iteration  20: 0.703 ops/s
+Iteration   1: 0.711 ops/s
+Iteration   2: 0.709 ops/s
+Iteration   3: 0.712 ops/s
+Iteration   4: 0.702 ops/s
+Iteration   5: 0.700 ops/s
+Iteration   6: 0.701 ops/s
+Iteration   7: 0.704 ops/s
+Iteration   8: 0.704 ops/s
+Iteration   9: 0.704 ops/s
+Iteration  10: 0.704 ops/s
+Iteration  11: 0.703 ops/s
+Iteration  12: 0.704 ops/s
+Iteration  13: 0.701 ops/s
+Iteration  14: 0.704 ops/s
+Iteration  15: 0.707 ops/s
+Iteration  16: 0.700 ops/s
+Iteration  17: 0.705 ops/s
+Iteration  18: 0.703 ops/s
+Iteration  19: 0.699 ops/s
+Iteration  20: 0.701 ops/s
+
+# Run progress: 73.33% complete, ETA 00:09:16
+# Fork: 3 of 10
+# Warmup Iteration   1: setting up molecules
+0.700 ops/s
+# Warmup Iteration   2: 0.704 ops/s
+# Warmup Iteration   3: 0.705 ops/s
+# Warmup Iteration   4: 0.714 ops/s
+# Warmup Iteration   5: 0.713 ops/s
+# Warmup Iteration   6: 0.703 ops/s
+# Warmup Iteration   7: 0.694 ops/s
+# Warmup Iteration   8: 0.713 ops/s
+# Warmup Iteration   9: 0.710 ops/s
+# Warmup Iteration  10: 0.711 ops/s
+# Warmup Iteration  11: 0.712 ops/s
+# Warmup Iteration  12: 0.702 ops/s
+# Warmup Iteration  13: 0.709 ops/s
+# Warmup Iteration  14: 0.711 ops/s
+# Warmup Iteration  15: 0.706 ops/s
+# Warmup Iteration  16: 0.713 ops/s
+# Warmup Iteration  17: 0.710 ops/s
+# Warmup Iteration  18: 0.713 ops/s
+# Warmup Iteration  19: 0.712 ops/s
+# Warmup Iteration  20: 0.713 ops/s
+Iteration   1: 0.709 ops/s
+Iteration   2: 0.711 ops/s
+Iteration   3: 0.712 ops/s
+Iteration   4: 0.712 ops/s
+Iteration   5: 0.713 ops/s
+Iteration   6: 0.712 ops/s
+Iteration   7: 0.713 ops/s
+Iteration   8: 0.712 ops/s
+Iteration   9: 0.712 ops/s
+Iteration  10: 0.713 ops/s
+Iteration  11: 0.712 ops/s
+Iteration  12: 0.713 ops/s
+Iteration  13: 0.702 ops/s
+Iteration  14: 0.694 ops/s
+Iteration  15: 0.708 ops/s
+Iteration  16: 0.707 ops/s
+Iteration  17: 0.709 ops/s
+Iteration  18: 0.710 ops/s
+Iteration  19: 0.702 ops/s
+Iteration  20: 0.711 ops/s
+
+# Run progress: 76.67% complete, ETA 00:08:06
+# Fork: 4 of 10
+# Warmup Iteration   1: setting up molecules
+0.693 ops/s
+# Warmup Iteration   2: 0.700 ops/s
+# Warmup Iteration   3: 0.707 ops/s
+# Warmup Iteration   4: 0.710 ops/s
+# Warmup Iteration   5: 0.708 ops/s
+# Warmup Iteration   6: 0.709 ops/s
+# Warmup Iteration   7: 0.712 ops/s
+# Warmup Iteration   8: 0.704 ops/s
+# Warmup Iteration   9: 0.708 ops/s
+# Warmup Iteration  10: 0.711 ops/s
+# Warmup Iteration  11: 0.710 ops/s
+# Warmup Iteration  12: 0.710 ops/s
+# Warmup Iteration  13: 0.710 ops/s
+# Warmup Iteration  14: 0.705 ops/s
+# Warmup Iteration  15: 0.712 ops/s
+# Warmup Iteration  16: 0.712 ops/s
+# Warmup Iteration  17: 0.714 ops/s
+# Warmup Iteration  18: 0.714 ops/s
+# Warmup Iteration  19: 0.714 ops/s
+# Warmup Iteration  20: 0.714 ops/s
+Iteration   1: 0.714 ops/s
+Iteration   2: 0.714 ops/s
+Iteration   3: 0.705 ops/s
+Iteration   4: 0.713 ops/s
+Iteration   5: 0.712 ops/s
+Iteration   6: 0.714 ops/s
+Iteration   7: 0.714 ops/s
+Iteration   8: 0.715 ops/s
+Iteration   9: 0.715 ops/s
+Iteration  10: 0.707 ops/s
+Iteration  11: 0.714 ops/s
+Iteration  12: 0.715 ops/s
+Iteration  13: 0.714 ops/s
+Iteration  14: 0.713 ops/s
+Iteration  15: 0.713 ops/s
+Iteration  16: 0.711 ops/s
+Iteration  17: 0.711 ops/s
+Iteration  18: 0.712 ops/s
+Iteration  19: 0.712 ops/s
+Iteration  20: 0.709 ops/s
+
+# Run progress: 80.00% complete, ETA 00:06:56
+# Fork: 5 of 10
+# Warmup Iteration   1: setting up molecules
+0.679 ops/s
+# Warmup Iteration   2: 0.702 ops/s
+# Warmup Iteration   3: 0.712 ops/s
+# Warmup Iteration   4: 0.710 ops/s
+# Warmup Iteration   5: 0.712 ops/s
+# Warmup Iteration   6: 0.712 ops/s
+# Warmup Iteration   7: 0.709 ops/s
+# Warmup Iteration   8: 0.713 ops/s
+# Warmup Iteration   9: 0.710 ops/s
+# Warmup Iteration  10: 0.711 ops/s
+# Warmup Iteration  11: 0.712 ops/s
+# Warmup Iteration  12: 0.698 ops/s
+# Warmup Iteration  13: 0.710 ops/s
+# Warmup Iteration  14: 0.712 ops/s
+# Warmup Iteration  15: 0.708 ops/s
+# Warmup Iteration  16: 0.709 ops/s
+# Warmup Iteration  17: 0.709 ops/s
+# Warmup Iteration  18: 0.711 ops/s
+# Warmup Iteration  19: 0.696 ops/s
+# Warmup Iteration  20: 0.689 ops/s
+Iteration   1: 0.710 ops/s
+Iteration   2: 0.705 ops/s
+Iteration   3: 0.711 ops/s
+Iteration   4: 0.702 ops/s
+Iteration   5: 0.695 ops/s
+Iteration   6: 0.692 ops/s
+Iteration   7: 0.692 ops/s
+Iteration   8: 0.710 ops/s
+Iteration   9: 0.711 ops/s
+Iteration  10: 0.704 ops/s
+Iteration  11: 0.696 ops/s
+Iteration  12: 0.709 ops/s
+Iteration  13: 0.690 ops/s
+Iteration  14: 0.713 ops/s
+Iteration  15: 0.712 ops/s
+Iteration  16: 0.701 ops/s
+Iteration  17: 0.710 ops/s
+Iteration  18: 0.697 ops/s
+Iteration  19: 0.706 ops/s
+Iteration  20: 0.711 ops/s
+
+# Run progress: 83.33% complete, ETA 00:05:46
+# Fork: 6 of 10
+# Warmup Iteration   1: setting up molecules
+0.676 ops/s
+# Warmup Iteration   2: 0.705 ops/s
+# Warmup Iteration   3: 0.712 ops/s
+# Warmup Iteration   4: 0.711 ops/s
+# Warmup Iteration   5: 0.711 ops/s
+# Warmup Iteration   6: 0.711 ops/s
+# Warmup Iteration   7: 0.703 ops/s
+# Warmup Iteration   8: 0.711 ops/s
+# Warmup Iteration   9: 0.702 ops/s
+# Warmup Iteration  10: 0.711 ops/s
+# Warmup Iteration  11: 0.710 ops/s
+# Warmup Iteration  12: 0.710 ops/s
+# Warmup Iteration  13: 0.711 ops/s
+# Warmup Iteration  14: 0.711 ops/s
+# Warmup Iteration  15: 0.711 ops/s
+# Warmup Iteration  16: 0.711 ops/s
+# Warmup Iteration  17: 0.711 ops/s
+# Warmup Iteration  18: 0.712 ops/s
+# Warmup Iteration  19: 0.712 ops/s
+# Warmup Iteration  20: 0.710 ops/s
+Iteration   1: 0.712 ops/s
+Iteration   2: 0.712 ops/s
+Iteration   3: 0.712 ops/s
+Iteration   4: 0.710 ops/s
+Iteration   5: 0.709 ops/s
+Iteration   6: 0.710 ops/s
+Iteration   7: 0.709 ops/s
+Iteration   8: 0.712 ops/s
+Iteration   9: 0.711 ops/s
+Iteration  10: 0.709 ops/s
+Iteration  11: 0.709 ops/s
+Iteration  12: 0.708 ops/s
+Iteration  13: 0.710 ops/s
+Iteration  14: 0.686 ops/s
+Iteration  15: 0.712 ops/s
+Iteration  16: 0.708 ops/s
+Iteration  17: 0.711 ops/s
+Iteration  18: 0.711 ops/s
+Iteration  19: 0.712 ops/s
+Iteration  20: 0.711 ops/s
+
+# Run progress: 86.67% complete, ETA 00:04:37
+# Fork: 7 of 10
+# Warmup Iteration   1: setting up molecules
+0.699 ops/s
+# Warmup Iteration   2: 0.703 ops/s
+# Warmup Iteration   3: 0.705 ops/s
+# Warmup Iteration   4: 0.705 ops/s
+# Warmup Iteration   5: 0.708 ops/s
+# Warmup Iteration   6: 0.707 ops/s
+# Warmup Iteration   7: 0.708 ops/s
+# Warmup Iteration   8: 0.711 ops/s
+# Warmup Iteration   9: 0.710 ops/s
+# Warmup Iteration  10: 0.706 ops/s
+# Warmup Iteration  11: 0.712 ops/s
+# Warmup Iteration  12: 0.707 ops/s
+# Warmup Iteration  13: 0.710 ops/s
+# Warmup Iteration  14: 0.710 ops/s
+# Warmup Iteration  15: 0.708 ops/s
+# Warmup Iteration  16: 0.712 ops/s
+# Warmup Iteration  17: 0.711 ops/s
+# Warmup Iteration  18: 0.707 ops/s
+# Warmup Iteration  19: 0.710 ops/s
+# Warmup Iteration  20: 0.710 ops/s
+Iteration   1: 0.711 ops/s
+Iteration   2: 0.712 ops/s
+Iteration   3: 0.710 ops/s
+Iteration   4: 0.708 ops/s
+Iteration   5: 0.710 ops/s
+Iteration   6: 0.711 ops/s
+Iteration   7: 0.709 ops/s
+Iteration   8: 0.707 ops/s
+Iteration   9: 0.698 ops/s
+Iteration  10: 0.706 ops/s
+Iteration  11: 0.689 ops/s
+Iteration  12: 0.710 ops/s
+Iteration  13: 0.712 ops/s
+Iteration  14: 0.699 ops/s
+Iteration  15: 0.694 ops/s
+Iteration  16: 0.710 ops/s
+Iteration  17: 0.711 ops/s
+Iteration  18: 0.712 ops/s
+Iteration  19: 0.707 ops/s
+Iteration  20: 0.707 ops/s
+
+# Run progress: 90.00% complete, ETA 00:03:27
+# Fork: 8 of 10
+# Warmup Iteration   1: setting up molecules
+0.677 ops/s
+# Warmup Iteration   2: 0.699 ops/s
+# Warmup Iteration   3: 0.700 ops/s
+# Warmup Iteration   4: 0.709 ops/s
+# Warmup Iteration   5: 0.695 ops/s
+# Warmup Iteration   6: 0.705 ops/s
+# Warmup Iteration   7: 0.714 ops/s
+# Warmup Iteration   8: 0.713 ops/s
+# Warmup Iteration   9: 0.712 ops/s
+# Warmup Iteration  10: 0.697 ops/s
+# Warmup Iteration  11: 0.708 ops/s
+# Warmup Iteration  12: 0.712 ops/s
+# Warmup Iteration  13: 0.710 ops/s
+# Warmup Iteration  14: 0.711 ops/s
+# Warmup Iteration  15: 0.714 ops/s
+# Warmup Iteration  16: 0.713 ops/s
+# Warmup Iteration  17: 0.712 ops/s
+# Warmup Iteration  18: 0.710 ops/s
+# Warmup Iteration  19: 0.711 ops/s
+# Warmup Iteration  20: 0.711 ops/s
+Iteration   1: 0.712 ops/s
+Iteration   2: 0.710 ops/s
+Iteration   3: 0.710 ops/s
+Iteration   4: 0.712 ops/s
+Iteration   5: 0.711 ops/s
+Iteration   6: 0.711 ops/s
+Iteration   7: 0.712 ops/s
+Iteration   8: 0.711 ops/s
+Iteration   9: 0.712 ops/s
+Iteration  10: 0.712 ops/s
+Iteration  11: 0.712 ops/s
+Iteration  12: 0.711 ops/s
+Iteration  13: 0.711 ops/s
+Iteration  14: 0.711 ops/s
+Iteration  15: 0.710 ops/s
+Iteration  16: 0.711 ops/s
+Iteration  17: 0.711 ops/s
+Iteration  18: 0.711 ops/s
+Iteration  19: 0.711 ops/s
+Iteration  20: 0.711 ops/s
+
+# Run progress: 93.33% complete, ETA 00:02:18
+# Fork: 9 of 10
+# Warmup Iteration   1: setting up molecules
+0.690 ops/s
+# Warmup Iteration   2: 0.698 ops/s
+# Warmup Iteration   3: 0.712 ops/s
+# Warmup Iteration   4: 0.709 ops/s
+# Warmup Iteration   5: 0.702 ops/s
+# Warmup Iteration   6: 0.710 ops/s
+# Warmup Iteration   7: 0.708 ops/s
+# Warmup Iteration   8: 0.711 ops/s
+# Warmup Iteration   9: 0.711 ops/s
+# Warmup Iteration  10: 0.711 ops/s
+# Warmup Iteration  11: 0.710 ops/s
+# Warmup Iteration  12: 0.712 ops/s
+# Warmup Iteration  13: 0.709 ops/s
+# Warmup Iteration  14: 0.707 ops/s
+# Warmup Iteration  15: 0.709 ops/s
+# Warmup Iteration  16: 0.709 ops/s
+# Warmup Iteration  17: 0.707 ops/s
+# Warmup Iteration  18: 0.707 ops/s
+# Warmup Iteration  19: 0.710 ops/s
+# Warmup Iteration  20: 0.708 ops/s
+Iteration   1: 0.707 ops/s
+Iteration   2: 0.709 ops/s
+Iteration   3: 0.712 ops/s
+Iteration   4: 0.709 ops/s
+Iteration   5: 0.711 ops/s
+Iteration   6: 0.711 ops/s
+Iteration   7: 0.709 ops/s
+Iteration   8: 0.712 ops/s
+Iteration   9: 0.712 ops/s
+Iteration  10: 0.712 ops/s
+Iteration  11: 0.712 ops/s
+Iteration  12: 0.710 ops/s
+Iteration  13: 0.710 ops/s
+Iteration  14: 0.712 ops/s
+Iteration  15: 0.710 ops/s
+Iteration  16: 0.709 ops/s
+Iteration  17: 0.711 ops/s
+Iteration  18: 0.708 ops/s
+Iteration  19: 0.710 ops/s
+Iteration  20: 0.712 ops/s
+
+# Run progress: 96.67% complete, ETA 00:01:09
+# Fork: 10 of 10
+# Warmup Iteration   1: setting up molecules
+0.696 ops/s
+# Warmup Iteration   2: 0.702 ops/s
+# Warmup Iteration   3: 0.713 ops/s
+# Warmup Iteration   4: 0.712 ops/s
+# Warmup Iteration   5: 0.710 ops/s
+# Warmup Iteration   6: 0.710 ops/s
+# Warmup Iteration   7: 0.711 ops/s
+# Warmup Iteration   8: 0.712 ops/s
+# Warmup Iteration   9: 0.711 ops/s
+# Warmup Iteration  10: 0.711 ops/s
+# Warmup Iteration  11: 0.710 ops/s
+# Warmup Iteration  12: 0.712 ops/s
+# Warmup Iteration  13: 0.711 ops/s
+# Warmup Iteration  14: 0.712 ops/s
+# Warmup Iteration  15: 0.711 ops/s
+# Warmup Iteration  16: 0.712 ops/s
+# Warmup Iteration  17: 0.712 ops/s
+# Warmup Iteration  18: 0.711 ops/s
+# Warmup Iteration  19: 0.711 ops/s
+# Warmup Iteration  20: 0.712 ops/s
+Iteration   1: 0.704 ops/s
+Iteration   2: 0.710 ops/s
+Iteration   3: 0.708 ops/s
+Iteration   4: 0.709 ops/s
+Iteration   5: 0.711 ops/s
+Iteration   6: 0.709 ops/s
+Iteration   7: 0.706 ops/s
+Iteration   8: 0.711 ops/s
+Iteration   9: 0.712 ops/s
+Iteration  10: 0.710 ops/s
+Iteration  11: 0.711 ops/s
+Iteration  12: 0.712 ops/s
+Iteration  13: 0.712 ops/s
+Iteration  14: 0.711 ops/s
+Iteration  15: 0.705 ops/s
+Iteration  16: 0.706 ops/s
+Iteration  17: 0.710 ops/s
+Iteration  18: 0.708 ops/s
+Iteration  19: 0.712 ops/s
+Iteration  20: 0.711 ops/s
+
+
+Result "densityCalcImperative":
+  0.708 ±(99.9%) 0.001 ops/s [Average]
+  (min, avg, max) = (0.686, 0.708, 0.715), stdev = 0.006
+  CI (99.9%): [0.707, 0.710] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:34:36
+
+Benchmark                                       Mode  Cnt  Score   Error  Units
+SetOfBenchmarks.densityCalcFunctional          thrpt  200  0.697 ± 0.002  ops/s
+SetOfBenchmarks.densityCalcFunctionalParallel  thrpt  200  0.696 ± 0.002  ops/s
+SetOfBenchmarks.densityCalcImperative          thrpt  200  0.708 ± 0.001  ops/s
+
+Benchmark result is saved to build/reports/jmh/results.txt
+
+BUILD SUCCESSFUL
+
+Total time: 34 mins 41.069 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.13/userguide/gradle_daemon.html
