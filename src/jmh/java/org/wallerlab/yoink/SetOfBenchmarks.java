@@ -32,6 +32,14 @@ public class SetOfBenchmarks {
 	int numberOfAtomsXXL = 50;
 	
 	
+	int molecules200 = 200;
+	int molecules500 = 500;
+	int molecules750 = 750;
+	int molecules1000 = 1000;
+	int molecules1250 = 1250;
+	int molecules2000 = 2000;
+	
+	
 	List<Molecule> moleculesMsAs;
 	List<Molecule> moleculesMmAs;
 	List<Molecule> moleculesMlAs;
@@ -52,6 +60,13 @@ public class SetOfBenchmarks {
 	List<Molecule> moleculesMmAxxl;
 	List<Molecule> moleculesMlAxxl;
 	
+	List<Molecule> moleculesM200As;
+	List<Molecule> moleculesM500As;
+	List<Molecule> moleculesM750As;
+	List<Molecule> moleculesM1000As;
+	List<Molecule> moleculesM1250As;
+	List<Molecule> moleculesM2000As;
+	
 	Coord core = new Coord(0.0,0.0,0.0);
 	
 	MethodStarter starter;
@@ -70,7 +85,7 @@ public class SetOfBenchmarks {
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsS))
 						 .collect(Collectors.toList());
 		
-		moleculesMmAs = 
+		/*moleculesMmAs = 
 				IntStream.range(0,numberOfMoleculesM)
 						 .parallel()
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsS))
@@ -80,7 +95,7 @@ public class SetOfBenchmarks {
 				IntStream.range(0,numberOfMoleculesL)
 						 .parallel()
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsS))
-						 .collect(Collectors.toList());
+						 .collect(Collectors.toList());*/
 		
 		moleculesMsAm = 
 				IntStream.range(0,numberOfMoleculesS)
@@ -88,7 +103,7 @@ public class SetOfBenchmarks {
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsM))
 						 .collect(Collectors.toList());
 		
-		moleculesMmAm = 
+		/*moleculesMmAm = 
 				IntStream.range(0,numberOfMoleculesM)
 						 .parallel()
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsM))
@@ -98,7 +113,7 @@ public class SetOfBenchmarks {
 				IntStream.range(0,numberOfMoleculesL)
 						 .parallel()
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsM))
-						 .collect(Collectors.toList());
+						 .collect(Collectors.toList());*/
 		
 		moleculesMsAl = 
 				IntStream.range(0,numberOfMoleculesS)
@@ -106,7 +121,7 @@ public class SetOfBenchmarks {
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsL))
 						 .collect(Collectors.toList());
 		
-		moleculesMmAl = 
+		/*moleculesMmAl = 
 				IntStream.range(0,numberOfMoleculesM)
 						 .parallel()
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsL))
@@ -116,7 +131,7 @@ public class SetOfBenchmarks {
 				IntStream.range(0,numberOfMoleculesL)
 						 .parallel()
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsL))
-						 .collect(Collectors.toList());
+						 .collect(Collectors.toList());*/
 		moleculesMsAxl =
 				IntStream.range(0, numberOfMoleculesS)
 						 .parallel()
@@ -128,7 +143,7 @@ public class SetOfBenchmarks {
 						 .parallel()
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsXXL))
 						 .collect(Collectors.toList());
-		moleculesMmAxl =
+		/*moleculesMmAxl =
 				IntStream.range(0, numberOfMoleculesM)
 						 .parallel()
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsXL))
@@ -151,386 +166,340 @@ public class SetOfBenchmarks {
 						 .parallel()
 						 .mapToObj(i -> new Molecule(i,numberOfAtomsXXL))
 						 .collect(Collectors.toList());
+		
+		moleculesM500As = 
+				IntStream.range(0,molecules500)
+						 .parallel()
+						 .mapToObj(i -> new Molecule(i,numberOfAtomsS))
+						 .collect(Collectors.toList());
+		
+		moleculesM1000As = 
+				IntStream.range(0,molecules1000)
+						 .parallel()
+						 .mapToObj(i -> new Molecule(i,numberOfAtomsS))
+						 .collect(Collectors.toList());
+		
+		moleculesM2000As = 
+				IntStream.range(0,molecules2000)
+						 .parallel()
+						 .mapToObj(i -> new Molecule(i,numberOfAtomsS))
+						 .collect(Collectors.toList());
+		
+		moleculesM200As = 
+				IntStream.range(0,molecules200)
+						 .parallel()
+						 .mapToObj(i -> new Molecule(i,numberOfAtomsS))
+						 .collect(Collectors.toList());
+		
+		moleculesM750As = 
+				IntStream.range(0,molecules750)
+						 .parallel()
+						 .mapToObj(i -> new Molecule(i,numberOfAtomsS))
+						 .collect(Collectors.toList());
+		
+		moleculesM1250As = 
+				IntStream.range(0,molecules1250)
+						 .parallel()
+						 .mapToObj(i -> new Molecule(i,numberOfAtomsS))
+						 .collect(Collectors.toList());*/
 
 		starter = new MethodStarter();
 
 	}
 	
 	
-//	//Molecules small atoms small
-//
-//	@Benchmark
-//	public void imperativeMsAs(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMsmallAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMsAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMsmallAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelMsAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelFunctionalCDC(moleculesMsmallAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelImperativeCDCMsAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamPrallelImpCDC(moleculesMsmallAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelstreamMsAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMsmallAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	
-//	//molecules medium atoms small
-//	
-//	@Benchmark
-//	public void imperativeMmAs(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMmediumAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMmAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMmediumAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelMmAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelFunctionalCDC(moleculesMmediumAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelImperativeCDCMmAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamPrallelImpCDC(moleculesMmediumAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	@Benchmark
-//	public void functionalParallelstreamMmAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMmediumAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	
-//	//molecules large atoms small
-//	
-//	
-//	
-//	@Benchmark
-//	public void imperativeMlAs(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMlargeAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMlAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMlargeAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelMlAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelFunctionalCDC(moleculesMlargeAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelImperativeCDCMlAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamPrallelImpCDC(moleculesMlargeAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	@Benchmark
-//	public void functionalParallelstreamMlAs(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMlargeAsmall, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	
-//	//molecules small atoms medium
-//	
-//	
-//	
-//	@Benchmark
-//	public void imperativeMsAm(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMsmallAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMsAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMsmallAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelMsAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelFunctionalCDC(moleculesMsmallAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelImperativeCDCMsAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamPrallelImpCDC(moleculesMsmallAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	@Benchmark
-//	public void functionalParallelstreamMsAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMsmallAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	
-//	//molecules medium atoms medium
-//	
-//	
-//	@Benchmark
-//	public void imperativeMmAm(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMmediumAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMmAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMmediumAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelMmAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelFunctionalCDC(moleculesMmediumAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelImperativeCDCMmAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamPrallelImpCDC(moleculesMmediumAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	@Benchmark
-//	public void functionalParallelstreamMmAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMmediumAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	
-//	//molecules large atoms medium
-//	
-//	@Benchmark
-//	public void imperativeMlAm(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMlargeAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMlAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMlargeAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelMlAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelFunctionalCDC(moleculesMlargeAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelImperativeCDCMlAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamPrallelImpCDC(moleculesMlargeAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	@Benchmark
-//	public void functionalParallelstreamMlAm(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMlargeAmedium, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	
-//	//molecules small atoms large
-//	
-//	
-//	
-//	@Benchmark
-//	public void imperativeMsAl(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMsmallAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMsAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMsmallAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelMsAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelFunctionalCDC(moleculesMsmallAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelImperativeCDCMsAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamPrallelImpCDC(moleculesMsmallAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	@Benchmark
-//	public void functionalParallelstreamMsAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMsmallAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	//molecules medium atoms large
-//	
-//	@Benchmark
-//	public void imperativeMmAl(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMmediumAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMmAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMmediumAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelMmAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelFunctionalCDC(moleculesMmediumAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelImperativeCDCMmAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamPrallelImpCDC(moleculesMmediumAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	@Benchmark
-//	public void functionalParallelstreamMmAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMmediumAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	//molecules large atoms large
-//	
-//	@Benchmark
-//	public void imperativeMlAl(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMlargeAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMlAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMlargeAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelMlAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelFunctionalCDC(moleculesMlargeAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	@Benchmark
-//	public void functionalParallelImperativeCDCMlAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamPrallelImpCDC(moleculesMlargeAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	@Benchmark
-//	public void functionalParallelstreamMlAl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMlargeAlarge, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	//molecules small atoms very large
-//	
-//	@Benchmark
-//	public void imperativeMsAxl(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMsmallAxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMsAxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMsmallAxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalParallelMsAxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMsmallAxl, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	
-//	
-//	//molecules small atoms very very large
-//	
-//	@Benchmark
-//	public void imperativeMsAxxl(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMsmallAxxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMsAxxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMsmallAxxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalParallelMsAxxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMsmallAxxl, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	
-//	//molecules medium atoms very large
-//	
-//	@Benchmark
-//	public void imperativeMmAxl(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMmediumAxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMmAxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMmediumAxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalParallelMmAxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMmediumAxl, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	
-//	
-//	//molecules meidum atoms very very large
-//	
-//	@Benchmark
-//	public void imperativeMmAxxl(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMmediumAxxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMmAxxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMmediumAxxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalParallelMmAxxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMmediumAxxl, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	
-//	//molecules large atoms very large
-//	
-//	@Benchmark
-//	public void imperativeMlAxl(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMlargeAxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMlAxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMlargeAxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalParallelMlAxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMlargeAxl, qmThreshold, bufferThreshold,core));
-//	}
-//	
-//	
-//	
-//	
-//	//molecules large atoms very very large
-//	
-//	@Benchmark
-//	public void imperativeMlAxxl(Blackhole bh) {
-//		bh.consume(starter.calculateImperative(moleculesMlargeAxxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalMlAxxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamSerial(moleculesMlargeAxxl, qmThreshold, bufferThreshold,core));
-//	}
-//
-//	@Benchmark
-//	public void functionalParallelMlAxxl(Blackhole bh) {
-//		bh.consume(starter.calculateStreamParallelstream(moleculesMlargeAxxl, qmThreshold, bufferThreshold,core));
-//	}
+/*	//Molecules small atoms small
+
+	@Benchmark
+	public void imperativeMsAs(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMsAs, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMsAs(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMsAs, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMsAs(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMsAs, qmThreshold, bufferThreshold,core));
+	}
 	
 	
-	//Benchmarks for DensCalc Molecules small Atoms small
+	
+	//molecules medium atoms small
+	
+	@Benchmark
+	public void imperativeMmAs(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMmAs, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMmAs(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMmAs, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMmAs(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMmAs, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	
+	//molecules large atoms small
+	
+	
+	
+	@Benchmark
+	public void imperativeMlAs(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMlAs, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMlAs(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMlAs, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMlAs(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMlAs, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	
+	//molecules small atoms medium
+	
+	
+	
+	@Benchmark
+	public void imperativeMsAm(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMsAm, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMsAm(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMsAm, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMsAm(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMsAm, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	
+	//molecules medium atoms medium
+	
+	
+	@Benchmark
+	public void imperativeMmAm(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMmAm, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMmAm(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMmAm, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMmAm(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMmAm, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	
+	//molecules large atoms medium
+	
+	@Benchmark
+	public void imperativeMlAm(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMlAm, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMlAm(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMlAm, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMlAm(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMlAm, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	
+	//molecules small atoms large
+	
+	
+	
+	@Benchmark
+	public void imperativeMsAl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMsAl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMsAl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMsAl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMsAl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMsAl, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	//molecules medium atoms large
+	
+	@Benchmark
+	public void imperativeMmAl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMmAl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMmAl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMmAl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMmAl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMmAl, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	//molecules large atoms large
+	
+	@Benchmark
+	public void imperativeMlAl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMlAl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMlAl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMlAl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMlAl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMlAl, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	//molecules small atoms very large
+	
+	@Benchmark
+	public void imperativeMsAxl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMsAxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMsAxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMsAxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelMsAxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMsAxl, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	
+	
+	//molecules small atoms very very large
+	
+	@Benchmark
+	public void imperativeMsAxxl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMsAxxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMsAxxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMsAxxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelMsAxxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMsAxxl, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	
+	//molecules medium atoms very large
+	
+	@Benchmark
+	public void imperativeMmAxl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMmAxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMmAxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMmAxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelMmAxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMmAxl, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	
+	
+	//molecules meidum atoms very very large
+	
+	@Benchmark
+	public void imperativeMmAxxl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMmAxxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMmAxxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMmAxxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelMmAxxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMmAxxl, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	
+	//molecules large atoms very large
+	
+	@Benchmark
+	public void imperativeMlAxl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMlAxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMlAxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMlAxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelMlAxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMlAxl, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	
+	
+	//molecules large atoms very very large
+	
+	@Benchmark
+	public void imperativeMlAxxl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMlAxxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMlAxxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMlAxxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelMlAxxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMlAxxl, qmThreshold, bufferThreshold,core));
+	}*/
+	
+	
+/*	//Benchmarks for DensCalc Molecules small Atoms small
 	
 	@Benchmark
 	public void densityCalcImperativeMsAs(Blackhole bh){
@@ -823,15 +792,201 @@ public class SetOfBenchmarks {
 	@Benchmark
 	public void densityCalcFunctionalParallelMlAxxl(Blackhole bh){
 		bh.consume(starter.calculateDensityStreamParallel(moleculesMlAxxl, core));
+	}*/
+	
+	
+	// Distance Schnittpunktsuche
+	
+	@Benchmark
+	public void imperativeM750As(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesM750As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamM750As(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesM750As, qmThreshold, bufferThreshold,core));
+	}
+	
+	@Benchmark
+	public void imperativeM1250As(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesM1250As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamM1250As(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesM1250As, qmThreshold, bufferThreshold,core));
+	}
+	
+/*	@Benchmark
+	public void imperativeM2000As(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesM2000As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamM2000As(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesM2000As, qmThreshold, bufferThreshold,core));
+	}*/
+	
+/*	// Denscalc Schnittpunktsuch
+	
+	@Benchmark
+	public void imperativeM200As(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesM200As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalM200As(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesM200As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamM200As(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesM200As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void imperativeM500As(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesM500As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalM500As(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesM500As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamM500As(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesM1000As, qmThreshold, bufferThreshold,core));
+	}
+	
+	@Benchmark
+	public void imperativeM1000As(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesM1000As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalM1000As(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesM1000As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamM1000As(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesM1000As, qmThreshold, bufferThreshold,core));
+	}
+	
+	@Benchmark
+	public void imperativeM2000As(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesM2000As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalM2000As(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesM2000As, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamM2000As(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesM2000As, qmThreshold, bufferThreshold,core));
+	}*/
+	
+	
+	//Ergänzugen DensCalc MsAx
+
+	//MsAs
+	
+	@Benchmark
+	public void imperativeMsAs(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMsAs, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMsAs(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMsAs, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMsAs(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMsAs, qmThreshold, bufferThreshold,core));
+	}
+	
+	// MsAm
+	
+	@Benchmark
+	public void imperativeMsAm(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMsAm, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMsAm(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMsAm, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMsAm(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMsAm, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	
+	// MsAl
+	
+	@Benchmark
+	public void imperativeMsAl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMsAl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMsAl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMsAl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMsAl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMsAl, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	// MsAxl
+
+	@Benchmark
+	public void imperativeMsAxl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMsAxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMsAxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMsAxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMsAxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMsAxl, qmThreshold, bufferThreshold,core));
+	}
+	
+	
+	// MsAxxl
+	
+	@Benchmark
+	public void imperativeMsAxxl(Blackhole bh) {
+		bh.consume(starter.calculateImperative(moleculesMsAxxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalMsAxxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamSerial(moleculesMsAxxl, qmThreshold, bufferThreshold,core));
+	}
+
+	@Benchmark
+	public void functionalParallelstreamMsAxxl(Blackhole bh) {
+		bh.consume(starter.calculateStreamParallelstream(moleculesMsAxxl, qmThreshold, bufferThreshold,core));
 	}
 	
 	
 	
 	
-	
-	
 
-	public static void main(String[] args) throws Exception {
+
+		public static void main(String[] args) throws Exception {
 		Options options = new OptionsBuilder()
 				.include(SetOfBenchmarks.class.getSimpleName())
 				.warmupIterations(5)
